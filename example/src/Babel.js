@@ -1,9 +1,6 @@
 class Babel {
   hello() {
-    if(true)
-      return 'world';
-    else
-      return null
+    return 'world';
   }
 
   world() {
