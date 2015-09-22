@@ -25,7 +25,7 @@ function instrumentFiles(files, dir, filename, callback) {
         }).code
       }
       catch(e) {
-
+        return console.error('Babel could not transform', file, e.message)
       }
 
       try {
@@ -33,7 +33,7 @@ function instrumentFiles(files, dir, filename, callback) {
         isrc[index] = instrumenter.instrumentSync(code, file)
       }
       catch(e) {
-        console.error('Unable to instrument', file)
+        return console.error('Unable to instrument', file, e.message)
       }
 
       if(--count === 0) {
