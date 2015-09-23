@@ -1,19 +1,26 @@
 {
-  "author": "fermads",
   "name": "intestify",
   "version": "1.0.0",
   "description": "Client side JavaScript unit tests and code coverage with fixtures, ajax mock, Gulp and Grunt support combining Jasmine, Istanbul and Phantom in one module",
   "main": "src/index.js",
+  "author": "fermads",
+  "license": "MIT",
+  "homepage": "https://github.com/fermads/intestify",
   "engines": {
     "node": ">=0.8.0"
   },
   "scripts": {
     "test": "cd example && node ."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fermads/intestify.git"
+  },
   "keywords": [
     "jasmine",
     "istanbul",
     "phantom",
+    "babel",
     "phantomjs",
     "test",
     "unit",
@@ -21,8 +28,11 @@
     "gulpplugin",
     "gruntplugin"
   ],
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fermads/intestify/issues"
+  },
   "dependencies": {
+    "babel-core": "^5.8.25",
     "globby": "^2.0.0",
     "handlebars": "^3.0.3",
     "istanbul": "git://github.com/gotwarlost/istanbul.git#source-map",
@@ -30,7 +40,6 @@
     "phantomjs": "^1.9.17"
   },
   "devDependencies": {
-    "babel-core": "^5.8.25",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-uglify": "^1.2.0"
