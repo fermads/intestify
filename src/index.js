@@ -44,22 +44,17 @@ function extendDefaults(options) {
     runner: libpath +'/jasmine/SpecRunner.html',
     fixture: options.base +'/fixture/*',
     callback: null,
-    // url: 'http://localhost/',
-    babel: {
-      src:true,
-      spec:true
-    },
     jasmine: {
-      js: libpath +'/scripts.js',
+      js: libpath +'/scripts.js', // all jasmine scripts for the specrunner
       css: libpath +'/styles.css',
-      spec: 'spec.js',
+      spec: 'spec.js', // all specs for the specrunner
       report: options.base +'/report/unit',
       fixture: 'fixture.js', // fixture filename
       reporters: ['terminal', 'junit']
     },
     istanbul: {
-      isrc: 'isrc.js', // instrumented source filename
-      report: options.base +'/report/coverage',
+      isrc: 'isrc.js', // instrumented source filename for the specrunner
+      report: options.base +'/report/coverage', // path to istanbul reports
       reporters: ['text-summary', 'lcov', 'clover']
     },
     phantom: {
@@ -113,26 +108,11 @@ function addSpecs(options) {
       if(error)
         return console.error(error)
 
-      // to-do: remove the array?
-      configs.spec = [ path.resolve(options.tmp +'/'+ specFile) ]
+      configs.spec = path.resolve(options.tmp +'/'+ specFile)
       addLibs(options)
     })
   })
 }
-
-/*function addSpecs(options) {
-  globby(options.spec, globOptions, function (error, files) {
-    if(error)
-      return console.error(error)
-
-    if(files.length === 0)
-      return console.error('No spec files found at', options.spec)
-
-    configs.spec = files
-
-    addLibs(options)
-  })
-}*/
 
 function addLibs(options) {
   globby(options.lib || '', globOptions, function (error, files) {
