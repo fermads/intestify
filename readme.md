@@ -72,20 +72,21 @@ See a [gruntfile.js](https://github.com/fermads/intestify/blob/master/example/gr
 - **callback** (_function_): Callback function is called when all tests end and
   reports are written.<br>Defaults to `null`
 - **jasmine**
-  - **report** (_path_): Path to write Jasmine JUnit XML reports.<br>Default to
-  `[base]/report/unit`
+  - **report** (_path_): Path to write Jasmine JUnit XML reports.<br>
+    Defaults to `[base]/report/unit`
 - **istanbul**
-  - **report** (_path_): Path to write Istanbul file reports.<br>Default to
-    `[base]/report/coverage`
-  - **reporters** (_array_): List of Istanbul reporters.<br>Defaults to
-    `['text-summary', 'lcov', 'clover']`
+  - **report** (_path_): Path to write Istanbul file reports.<br>
+    Defaults to `[base]/report/coverage`
+  - **reporters** (_array_): List of Istanbul reporters.<br>
+    Defaults to `['text-summary', 'lcov', 'clover']`
 - **phantom**
-  - **bin** (_file_): Phantom binary file location.<br>Default uses the included
-    [npm phantom](https://www.npmjs.com/package/phantomjs)
+  - **bin** (_file_): Phantom binary file location.<br>Defaults uses the
+    included [npm phantom](https://www.npmjs.com/package/phantomjs)
   - **verbose** (_boolean_): Show resource errors e.g. file not found.<br>
     Defaults to `false`
   - **params** (_object_): Phantom additional runtime parameters. See some
-    [useful parameters](#useful-phantom-parameters)<br>Defaults to `{}`.
+    [useful parameters](#useful-phantom-parameters)<br>
+    Defaults to `{}`.
 
 ### Example project structure
 Works with this module's default options
