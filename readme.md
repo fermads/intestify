@@ -102,7 +102,7 @@ project/
 │   └── etc...
 └── test/
     ├── fixture/ (optional)
-    │   └── all fixture files...
+    │   └── all fixture files... (auto-loaded)
     ├── report/ (auto-created)
     │   ├── coverage
     │   │   └── Istanbul reports...
@@ -113,6 +113,7 @@ project/
     └── tmp/ (auto-created)
         ├── isrc.js (generated instrumented src)
         ├── fixture.js (generated fixtures file)
+        ├── spec.js (generated combined spec file)
         └── SpecRunner.html (generated spec runner)
 ```
 
