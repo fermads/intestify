@@ -1,18 +1,17 @@
 ﻿# intestify
 
-Client side JavaScript unit tests and code coverage with fixtures, ajax mock,
-Gulp and Grunt support combining Jasmine, Istanbul and Phantom in one module
+Client side framework for unit tests and code coverage with fixtures, ajax mock,
+ESNext, Gulp and Grunt support combining Babel, Jasmine, Istanbul and Phantom
+in one module
 
-- Jasmine v2.3.4 for unit tests and Istanbul for test coverage
-- Tests run on Phantom 1.9.8 (included) or 2.0.0
-- Babel (ES Next) support for source and spec files
-- Easy Gulp integration. Works as a Grunt plugin
-- Fixtures auto load
-- Includes Jasmine ajax mock
+- Jasmine v2.3.4 for unit tests and Istanbul for code coverage
+- Tests run on Phantom 1.9.8 (included) or 2.0.0 (tested)
+- Babel (ESNext) support for source and spec files
+- Easy Gulp integration. Also works as a Grunt plugin
+- Includes Jasmine ajax mock and fixtures auto load
 - Istanbul outputs summary to console and full reports to file
-- Jasmine reports to console and to JUnit XML file for CI
+- Jasmine reports to console and to JUnit XML for CI
 - Spec runner can also run in a full browser
-- Polyfill Function.bind for Phantom 1.9
 
 With focus on performance, everything runs on file://. No server start/stop
 and no net socket communication between Jasmine, Phantom or Node. It uses stdio.
