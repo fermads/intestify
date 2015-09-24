@@ -1,12 +1,11 @@
 ﻿# intestify
 
-Client side framework for unit tests and code coverage with fixtures, ajax mock,
-ESNext, Gulp and Grunt support combining Babel, Jasmine, Istanbul and Phantom
-in one module
+Framework for client side unit tests and code coverage combining Babel, Jasmine,
+Istanbul and Phantom with support for fixtures, ajax mock, ES6, Gulp and Grunt
 
 - Jasmine v2.3.4 for unit tests and Istanbul for code coverage
 - Tests run on Phantom 1.9.8 (included) or 2.0.0 (tested)
-- Babel (ESNext) support for source and spec files
+- Babel (ES6) support for source and spec files
 - Easy Gulp integration. Also works as a Grunt plugin
 - Includes Jasmine ajax mock and fixtures auto load
 - Istanbul outputs summary to console and full reports to file

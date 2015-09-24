@@ -1,7 +1,7 @@
 {
   "name": "intestify",
-  "version": "1.0.0",
-  "description": "Client side JavaScript unit tests and code coverage with fixtures, ajax mock, Gulp and Grunt support combining Jasmine, Istanbul and Phantom in one module",
+  "version": "1.0.1",
+  "description": "Framework for client side unit tests and code coverage combining Babel, Jasmine, Istanbul and Phantom with support for fixtures, ajax mock, ES6, Gulp and Grunt",
   "main": "src/index.js",
   "author": "fermads",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "istanbul",
     "phantom",
     "babel",
+    "es6",
     "phantomjs",
     "test",
     "unit",
